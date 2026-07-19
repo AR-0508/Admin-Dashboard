@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Dashboard </title>
+    <link rel = "stylesheet" href = "./styles.css">
+</head>
+
+<body>
+    <div id = "container">
+
+        <div id = "sidebar">
+
+            <div id = "company-info">
+            <svg fill="#000000" width="90px" height="90px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="evenodd" fill = "white">
+        <circle cx="128.5" cy="139.5" r="18.5"/>
+        <path d="M89.269 69.823l39.943-23.625 38.081 23.376.243 44.513-18.906 12.071s-11.12-10.516-21.235-10.518c-10.117-.002-19.2 10.51-19.2 10.51l-17.83-12.01-1.096-44.317zm4.64 40.261l32.733-19.52-.34-38.05L92.692 72.5l1.217 37.585zm1.83 4.806c1.828 0 12 6.919 12 6.919s9.188-10.227 20.027-9.894c10.838.333 21.319 10.165 21.319 10.165l14.32-8.436-34.5-18.498S93.911 114.89 95.74 114.89zm-8.066 94.924l-40.431-22.78 1.203-44.667L87.873 118.9l18.907 11.338s-3.414 14.388 1.642 23.15c5.057 8.762 18.569 11.871 18.569 11.871l-.486 21.446-38.832 23.109zm32.547-24.15l-33.272-18.586-32.781 19.318 34.112 19.115 31.94-19.846zm3.247-3.987c-.915-1.583-.008-13.852-.008-13.852s-13.317-3.344-18.448-12.897c-5.13-9.552-1.99-23.045-1.99-23.045l-14.467-8.184 1.231 39.127s34.596 20.434 33.682 18.85zm84.415-40.856l.488 46.404-39.284 21.292-38.671-22.046-1-21.41s13.532-2.87 18.592-11.63c5.06-8.76 2.631-23.383 2.631-23.383l18.316-10.436 38.928 21.209zm-37.187-16.112l.54 38.108 33.12 18.73-.502-39.099-33.158-17.739zm-4.077.183l-11.992 6.932s2.129 14.571-3.579 23.79c-5.708 9.22-17.329 11.881-17.329 11.881l.146 14.62 32.27-19.63.484-37.593z"/>
+    </g>
+            </svg>
+            <p id = "company-name"> TriSqaure </p>
+            </div>
+
+            <div id = "navigation">
+
+                <p class = "navigation-bar heading"> Navigation </p>
+
+                <div id = "home">
+                <span class = "icon home-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>home</title>
+                                <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path>
+                </svg>
+                </span>
+
+                <span class = "title home-title"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Home </a></span>
+                </div>
+
+                 <div id = "profile">
+                <span class = "icon profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>profile</title>
+                                <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z"></path>
+                </svg>
+                </span>
+
+                <span class = "title profile-title"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Profile</a> </span>
+                </div>
+                
+                <div id = "msgs">
+                <span class = "icon msgs">
+                <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>msgs</title>
+                                <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M20 16H5.2L4 17.2V4H20V16Z"></path>
+                </svg>
+                </span>
+
+                <span class = "title profile-title"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Messages </a></span>
+                </div>
+
+                 <div id = "history">
+                <span class = "icon history">
+                <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>history</title>
+                                <path d="M12 20C16.4 20 20 16.4 20 12S16.4 4 12 4 4 7.6 4 12 7.6 20 12 20M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2M12.5 12.8L7.7 15.6L7 14.2L11 11.9V7H12.5V12.8Z"></path>
+                </svg>
+                </span>
+
+                <span class = "title history-title"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> History </a> </span>
+                </div>
+
+                <div id = "tasks">
+                <span class = "icon tasks">
+                <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>tasks</title>
+                                <path d="M15,7H20.5L15,1.5V7M8,0H16L22,6V18A2,2 0 0,1 20,20H8C6.89,20 6,19.1 6,18V2A2,2 0 0,1 8,0M4,4V22H20V24H4A2,2 0 0,1 2,22V4H4Z"></path>
+                </svg>
+                </span>
+
+                <span class = "title tasks-title"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Tasks </a> </span>
+                </div>
+
+                <div id = "communities">
+                <span class = "icon communities">
+                <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>communities</title>
+                                <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"></path>
+                </svg>
+                </span>
+
+                <span class = "title communities-title"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Communities </a> </span>
+                </div>
+
+                 <p class = "more heading"> More </p>
+
+                 <div id = "settings">
+                    <span class = "icon settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>settings</title>
+                                <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"></path>
+                        </svg>
+                    </span>
+
+                    <span class = "title settings"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Settings </a> </span>
+                 </div>
+
+                <div id = "support">
+                    <span class = "icon support">
+                        <svg xmlns="http://www.w3.org/2000/svg" width = "35px" height = "35px" viewBox="0 0 26 26" fill = "white" >
+                                <title>support</title>
+                                <path d="M12 3C6.5 3 2 6.6 2 11C2 13.2 3.1 15.2 4.8 16.5C4.8 17.1 4.4 18.7 2 21C4.4 20.9 6.6 20 8.5 18.5C9.6 18.8 10.8 19 12 19C17.5 19 22 15.4 22 11S17.5 3 12 3M12 17C7.6 17 4 14.3 4 11S7.6 5 12 5 20 7.7 20 11 16.4 17 12 17M12.2 6.5C11.3 6.5 10.6 6.7 10.1 7C9.5 7.4 9.2 8 9.3 8.7H11.3C11.3 8.4 11.4 8.2 11.6 8.1C11.8 8 12 7.9 12.3 7.9C12.6 7.9 12.9 8 13.1 8.2C13.3 8.4 13.4 8.6 13.4 8.9C13.4 9.2 13.3 9.4 13.2 9.6C13 9.8 12.8 10 12.6 10.1C12.1 10.4 11.7 10.7 11.5 10.9C11.1 11.2 11 11.5 11 12H13C13 11.7 13.1 11.5 13.1 11.3C13.2 11.1 13.4 11 13.6 10.8C14.1 10.6 14.4 10.3 14.7 9.9C15 9.5 15.1 9.1 15.1 8.7C15.1 8 14.8 7.4 14.3 7C13.9 6.7 13.1 6.5 12.2 6.5M11 13V15H13V13H11Z"></path>
+                        </svg>
+                    </span>
+
+                    <span class = "title support"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Support </a> </span>
+                 </div>
+
+                 <div id = "privacy">
+                    <span class = "icon privacy">
+                        <svg xmlns="http://www.w3.org/2000/svg" width = "24px" height = "24px" viewBox="0 0 26 26" fill = "white" >
+                                <title>privacy</title>
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,3.18L19,6.3V11.22C19,12.92 18.5,14.65 17.65,16.17C16,14.94 13.26,14.5 12,14.5C10.74,14.5 8,14.94 6.35,16.17C5.5,14.65 5,12.92 5,11.22V6.3L12,3.18M12,6A3.5,3.5 0 0,0 8.5,9.5A3.5,3.5 0 0,0 12,13A3.5,3.5 0 0,0 15.5,9.5A3.5,3.5 0 0,0 12,6M12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8M12,16.5C13.57,16.5 15.64,17.11 16.53,17.84C15.29,19.38 13.7,20.55 12,21C10.3,20.55 8.71,19.38 7.47,17.84C8.37,17.11 10.43,16.5 12,16.5Z"></path>
+                        </svg>
+                    </span>
+
+                    <span class = "title privacy"> <a href = "https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/project_submissions"> Privacy </a> </span>
+                 </div>
+            </div>
+        </div>
+
+        <div id = "header">
+            <div id = "search">
+                <span class = "header-icon search">
+                <svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6" stroke = "white">
+                <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
+                </svg>
+                </span>
+                
+                <input type = "search" id = "search-bar">
+            </div>
+
+            <div id = "header-profile">
+                <span class = "header-icon bell">
+                <svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6" stroke = "white">
+                <path fill-rule="evenodd" d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z" clip-rule="evenodd" />
+                </svg>
+                </span>
+
+                <img src = "./images/images.jpg" alt = "batman-profile-pic">
+                <p id = "profile-name"> Abdur Rehman Arif </p>
+            </div>
+        </div>
+
+        <div id = "main-content">
+            <div id = "projects-column">
+                <div id = "profile-dashboard">
+                    <div id = "profile-info">
+                        <img src = "images/images.jpg" alt = "batman-profile-pic">
+
+                        <div id = "info-text">
+                            <p id = "intro">Hi There, </p>
+                            <p class = "name">Abdur Rehman Arif</p>
+                            <p class = "name">(@abdurrehmanarif)</p>
+                        </div>
+                    </div>
+
+                    <div id = "images">
+                        <div id = "new">
+                            <span class = "profile-icon new">
+                            <svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 30 30" fill="currentColor" class="size-6" stroke = "white" stroke-width = "2px"> 
+                            <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                            </svg>
+                            </span>
+                            <span id = "new-title"> New </span>
+                        </div>
+
+                        <div id = "upload">
+                            <span class = "upload-icon new">
+                            <svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 30 30" fill="currentColor" class="size-6" stroke = "white" stroke-width = "2px">
+                            <path fill-rule="evenodd" d="M11.47 2.47a.75.75 0 0 1 1.06 0l4.5 4.5a.75.75 0 0 1-1.06 1.06l-3.22-3.22V16.5a.75.75 0 0 1-1.5 0V4.81L8.03 8.03a.75.75 0 0 1-1.06-1.06l4.5-4.5ZM3 15.75a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                        </svg>
+                        </span>
+
+                        <span id = "upload-title"> Upload </span>
+                        </div>
+
+                        <div id = "share">
+                            <span class = "share-icon new">
+                            <svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 30 30" fill="currentColor" class="size-6"  stroke = "white" stroke-width = "2px">
+                                <path fill-rule="evenodd" d="M15.75 4.5a3 3 0 1 1 .825 2.066l-8.421 4.679a3.002 3.002 0 0 1 0 1.51l8.421 4.679a3 3 0 1 1-.729 1.31l-8.421-4.678a3 3 0 1 1 0-4.132l8.421-4.679a3 3 0 0 1-.096-.755Z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+
+                        <span id = "share-title"> Share </span>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div id = "projects-intro">
+                    <div id = "projects-heading">
+                        <p> Your Projects </p>
+                    </div>
+                </div>
+
+                <div id = "card-container">
+                    <div class = "cards c1">
+                        <div class = "content">
+                            <div class = "text-content">
+                                <p class = "content-heading"> GroundX </p>
+                                <p class = "actual-content"> While other companies are funding billions to conquer space, we only had enough for a bicycle.
+                                GroundX - It's better to walk</p>
+                            </div>
+
+                            <div class = "image-content">
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                                    </svg>
+                                </span>
+
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class = "cards c2">
+                        <div class = "content">
+                            <div class = "text-content">
+                                <p class = "content-heading"> Roof 11 </p>
+                                <p class = "actual-content"> An innovative operating system for NASA computers.
+                                Update 666. Added a Geiger counter and Pokémon GO.</p>
+                            </div>
+
+                            <div class = "image-content">
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                                    </svg>
+                                </span>
+
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "cards c3">
+                        <div class = "content">
+                            <div class = "text-content">
+                                <p class = "content-heading"> GitGud </p>
+                                <p class = "actual-content"> The largest platform for storing code and destroying the self-esteem of developers.
+                                GitGud - It could have been written better.</p>
+                            </div>
+
+                            <div class = "image-content">
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                                    </svg>
+                                </span>
+
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "cards c4">
+                        <div class = "content">
+                            <div class = "text-content">
+                                <p class = "content-heading"> Pear </p>
+                                <p class = "actual-content">The largest manufacturer of devices that work perfectly together... if they're also from Pear.
+                                We don't sell devices. We sell experiences. And cables</p>
+                            </div>
+
+                            <div class = "image-content">
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                                    </svg>
+                                </span>
+
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "cards c5">
+                        <div class = "content">
+                            <div class = "text-content">
+                                <p class = "content-heading"> Volta </p>
+                                <p class = "actual-content">A leading manufacturer of electric vehicles and developer of innovative energy storage systems, our engineers were the first in the world to abandon lithium-ion batteries in favor of...</p>
+                            </div>
+
+                            <div class = "image-content">
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                                    </svg>
+                                </span>
+
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "cards c6">
+                        <div class = "content">
+                            <div class = "text-content">
+                                <p class = "content-heading"> TempleOS </p>
+                                <p class = "actual-content">If you can't understand all the source code of your operating system, then it's not your computer anymore.</p>
+                            </div>
+
+                            <div class = "image-content">
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                                    </svg>
+                                </span>
+
+                                <span class = "card-icon heart"><svg xmlns="http://www.w3.org/2000/svg" height = "35px" width = "35px" viewBox="0 0 35 35" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M14.47 2.47a.75.75 0 0 1 1.06 0l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 1 1-1.06-1.06l4.72-4.72H9a5.25 5.25 0 1 0 0 10.5h3a.75.75 0 0 1 0 1.5H9a6.75 6.75 0 0 1 0-13.5h10.19l-4.72-4.72a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "announcement-trending-section">
+                <div id = "announcements">
+                    <div class = "at-headings">
+                        <p> Announcements </p>
+                    </div>
+
+                    <div class = "at-content">
+                      <ul id = "announcements-list">
+                        <li class = "announcements-list-items">
+                        <p class = "announcements-list-items-headings">GTA 6 is out now!</p>
+                        <p class = "announcements-list-items-content">After 36 years of development, the game has finally entered early access</p>
+                        </li>
+
+                        <li class = "announcements-list-items">
+                        <p class = "announcements-list-items-headings">Breakthrough in technology DLSS</p>
+                        <p class = "announcements-list-items-content">The RTX 9090 will allow you to run the calculator at ultra-low settings</p>
+                        </li>
+
+                        <li class = "announcements-list-items">
+                        <p class = "announcements-list-items-headings">Announced YouPhone 75 Pro Max</p>
+                        <p class = "announcements-list-items-content">The RTX 9090 will allow you to run the calculator at ultra-low settings</p>
+                        </li>
+                       </ul>
+                    </div>
+                </div>
+
+                <div id = "trending">
+                    <div class = "at-headings">
+                        <p> Trending </p>
+                    </div>
+
+                    <div class = "at-content">
+                       <ul id = "trending-list">
+
+                        <li class = "trending-list-items">
+                        <img src = "images/User-main.png" class = "trending-list-items-images" alt = "user-profile-pics">
+
+                        <div class = "trending-text-content">
+                        <p class = "trending-text-content-heading">@mozideus</p>
+                        <p class = "trending-text-content-caption">Maybe tomorrow...</p>
+                        </div>
+                        </li>
+
+                        <li class = "trending-list-items">
+                        <img src = "images/User1.png" class = "trending-list-items-images" alt = "user-profile-pics">
+                        
+                        <div class = "trending-text-content">
+                        <p class = "trending-text-content-heading">@walterwhite</p>
+                        <p class = "trending-text-content-caption">Say my name</p>
+                        </div>
+                        </li>
+
+                        <li class = "trending-list-items">
+                        <img src = "images/User2.png" class = "trending-list-items-images" alt = "user-profile-pics">
+                        
+                        <div class = "trending-text-content">
+                        <p class = "trending-text-content-heading">@arthurmorgan</p>
+                        <p class = "trending-text-content-caption">It's a good life</p>
+                        </div>
+                        </li>
+
+                        <li class = "trending-list-items">
+                        <img src = "images/User3.png" class = "trending-list-items-images" alt = "user-profile-pics">
+                         
+                        <div class = "trending-text-content">
+                        <p class = "trending-text-content-heading">@brucewayne</p>
+                        <p class = "trending-text-content-caption">You just ran out of time</p>
+                        </div>
+                        </li>
+
+                       </ul>
+                    </div>
+                </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
